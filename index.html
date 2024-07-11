@@ -9,141 +9,140 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Weather App</title>
 </head>
-<nav class="navbar navbar-expand-lg bg-nav py-5">
-    <div class="container">
-        <a class="navbar-brand text-white d-flex gap-3" href="index.html">
-            <div class="logo-image"><img src="./images/logo.png" alt="Weather"></div>
-            <div class="logo-text">
-                <h1>Weather</h1>
-                <p class="logo-paragraph">tagline goes here</p>
-            </div>
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
-                <li class="nav-item">
-                    <a class="nav-link active px-4 py-1" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4 py-1" aria-current="page" href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4 py-1" aria-current="page" href="#">Live cameras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4 py-1" aria-current="page" href="#">Photos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-4 py-1" aria-current="page" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<header class="home">
-    <div class="container">
-        <div class="row">
-            <div class="my-5 py-4">
-                <form class="subscribe-form position-relative">
-                    <input type="text" class="p-3 rounded-pill w-100 border-0 text-white"
-                        placeholder="Find your location..." id="search">
-                    <button class="btn position-absolute rounded-pill px-5 text-white">Find</button>
-                </form>
-            </div>
-        </div>
-        <div class="row g-0 mb-5">
-            <div class="col-lg-4">
-                <div class="card h-100 border-0 first-day">
-                    <div class="card-header d-flex justify-content-between border-0">
-                        <p class="mb-0" id="todayDayName"></p>
-                        <div class="div d-flex">
-                            <p class="mb-0 me-1" id="todayDayNumber"></p>
-                            <p class="mb-0" id="todayMonth"></p>
-                        </div>
-                    </div>
-                    <div class="card-body special">
-                        <p class="city" id="todayLocation"></p>
-                        <h2 class="card-title" id="todayTemperature"></h2>
-                        <img src="" alt="Today Condition Image" id="todayConditionImage">
-                        <p class="card-text" id="todayCondition"></p>
-                        <ul class="list-unstyled d-flex gap-3">
-                            <li><img src="./images/icon-umberella.png" alt="Humidity"> 
-                                <span id="humidity"></span>
-                            </li>
-                            <li><img src="./images/icon-wind.png" alt="Wind Speed">
-                                <span id="windSpeed"></span>
-                            </li>
-                            <li><img src="./images/icon-compass.png" alt="Wind Direction">
-                                <span id="windDirection"></span>
-                            </li>
-                        </ul>
-                    </div>
+<body>
+    <nav class="navbar navbar-expand-lg bg-nav py-5">
+        <div class="container">
+            <a class="navbar-brand text-white d-flex gap-3" href="index.html">
+                <div class="logo-image"><img src="./images/logo.png" alt="Weather"></div>
+                <div class="logo-text">
+                    <h1>Weather</h1>
+                    <p class="logo-paragraph">tagline goes here</p>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card h-100 border-0 second-day">
-                    <div class="card-header d-flex justify-content-center border-0">
-                        <p class="text-center mb-0 nextDayName"></p>
-                    </div>
-                    <div class="card-body text-center">
-                        <div class="forecast-icon">
-                            <img src="" alt="Tomorrow Condition Image" class="nextConditionImage">
-                        </div>
-                        <div class="forecast-content">
-                            <h2 class="card-title nextMax"></h2>
-                            <p class="sub-title nextMin"></p>
-                            <p class="card-text nextConditionText"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="card h-100 border-0 third-day">
-                    <div class="card-header d-flex justify-content-center border-0">
-                        <p class="text-center mb-0 nextDayName"></p>
-                    </div>
-                    <div class="card-body text-center">
-                        <div class="forecast-icon">
-                            <img src="" alt="After Tomorrow Condition Image" class="nextConditionImage">
-                        </div>
-                        <div class="forecast-content">
-                            <h2 class="card-title nextMax"></h2>
-                            <p class="sub-title nextMin"></p>
-                            <p class="card-text nextConditionText"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<footer class="py-5">
-    <div class="container">
-        <div class="row d-flex justify-content-between">
-            <div class="col-lg-8">
-                <form class="subscribe-form position-relative mb-4">
-                    <input type="email" class="p-3 rounded-pill w-100 border-0 text-white"
-                        placeholder="Enter your email to subscribe...">
-                    <button class="btn position-absolute rounded-pill px-3 text-white">subscribe</button>
-                </form>
-            </div>
-            <div class="col-lg-3">
-                <ul class="social-links list-unstyled d-flex gap-1">
-                    <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="https://google.com" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                    <li><a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active px-4 py-1" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-1" aria-current="page" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-1" aria-current="page" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-1" aria-current="page" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-4 py-1" aria-current="page" href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <p class="footer-text">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
-    </div>
-</footer>
-
-<body>
+    </nav>
+    <header class="home">
+        <div class="container">
+            <div class="row">
+                <div class="my-5 py-4">
+                    <form class="subscribe-form position-relative">
+                        <input type="text" class="p-3 rounded-pill w-100 border-0 text-white"
+                            placeholder="Find your location..." id="search">
+                        <button class="btn position-absolute rounded-pill px-5 text-white">Find</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row g-0 mb-5">
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 first-day">
+                        <div class="card-header d-flex justify-content-between border-0">
+                            <p class="mb-0" id="todayDayName"></p>
+                            <div class="div d-flex">
+                                <p class="mb-0 me-1" id="todayDayNumber"></p>
+                                <p class="mb-0" id="todayMonth"></p>
+                            </div>
+                        </div>
+                        <div class="card-body special">
+                            <p class="city" id="todayLocation"></p>
+                            <h2 class="card-title" id="todayTemperature"></h2>
+                            <img src="" alt="Today Condition Image" id="todayConditionImage">
+                            <p class="card-text" id="todayCondition"></p>
+                            <ul class="list-unstyled d-flex gap-3">
+                                <li><img src="./images/icon-umberella.png" alt="Humidity"> 
+                                    <span id="humidity"></span>
+                                </li>
+                                <li><img src="./images/icon-wind.png" alt="Wind Speed">
+                                    <span id="windSpeed"></span>
+                                </li>
+                                <li><img src="./images/icon-compass.png" alt="Wind Direction">
+                                    <span id="windDirection"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 second-day">
+                        <div class="card-header d-flex justify-content-center border-0">
+                            <p class="text-center mb-0 nextDayName"></p>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="forecast-icon">
+                                <img src="" alt="Tomorrow Condition Image" class="nextConditionImage">
+                            </div>
+                            <div class="forecast-content">
+                                <h2 class="card-title nextMax"></h2>
+                                <p class="sub-title nextMin"></p>
+                                <p class="card-text nextConditionText"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 third-day">
+                        <div class="card-header d-flex justify-content-center border-0">
+                            <p class="text-center mb-0 nextDayName"></p>
+                        </div>
+                        <div class="card-body text-center">
+                            <div class="forecast-icon">
+                                <img src="" alt="After Tomorrow Condition Image" class="nextConditionImage">
+                            </div>
+                            <div class="forecast-content">
+                                <h2 class="card-title nextMax"></h2>
+                                <p class="sub-title nextMin"></p>
+                                <p class="card-text nextConditionText"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <footer class="py-5">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-8">
+                    <form class="subscribe-form position-relative mb-4">
+                        <input type="email" class="p-3 rounded-pill w-100 border-0 text-white"
+                            placeholder="Enter your email to subscribe...">
+                        <button class="btn position-absolute rounded-pill px-3 text-white">subscribe</button>
+                    </form>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="social-links list-unstyled d-flex gap-1">
+                        <li><a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="https://google.com" target="_blank"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                        <li><a href="https://pinterest.com" target="_blank"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-text">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
